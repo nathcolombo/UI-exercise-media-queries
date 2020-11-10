@@ -1,3 +1,30 @@
 body {
-    background-color: rgb(250, 163, 163);
+  background-color: rgb(250, 163, 163);
+}
+
+* {
+  color: #aaa;
+}
+
+@media print {
+  html {
+    background-color: white;
+    color: #444;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media (min-width: 1281px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
 }
